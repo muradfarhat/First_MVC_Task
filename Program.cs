@@ -1,4 +1,4 @@
-namespace First_MVC_Task
+namespace EmployeeMVC
 {
     public class Program
     {

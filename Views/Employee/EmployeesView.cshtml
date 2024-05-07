@@ -1,0 +1,25 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@model List<Employee>
+
+<h1>All Employees</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Employee Name</th>
+            <th scope="col">Job Title</th>
+            <th scope="col">Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emp in Model)
+        {
+            <tr>
+                <td>@emp.EmployeeId</td>
+                <td>@emp.Name</td>
+                <td>@emp.Title</td>
+                <td>@emp.Age</td>
+            </tr>
+        }
+    </tbody>
+</table>
